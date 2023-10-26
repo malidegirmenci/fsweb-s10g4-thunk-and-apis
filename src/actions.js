@@ -1,3 +1,4 @@
+import axios from "axios";
 export const GET_FAVS_FROM_LS = "GET_FAVS_FROM_LS";
 export const FAV_ADD = "FAV_ADD";
 export const FAV_REMOVE = "FAV_REMOVE";
@@ -17,5 +18,30 @@ export const removeFav = (id) => {
   return { type: FAV_REMOVE, payload: id }
 }
 
-export const fetchAnother = () => dispatch => {
+export const fetchAnother = () => (dispatch) => {
+  console.log("fetchAnother started");
+  dispatch(fetchLoading());
+  axios
+    .get("https://randomuser.me/api/1.4/")
+    .then((response) => {
+      //console.log("response:",response)
+      const data = response.data.results[0];
+      //console.log(data);
+      dispatch(fetchSuccess(data));
+    })
+    .catch((error) => {
+      //console.log(error);
+      dispatch(fetchError(error));
+
+    })
+}
+
+export const fetchLoading = () => {
+  return { type: FETCH_LOADING }
+}
+export const fetchError = (message) => {
+  return { type: FETCH_ERROR, payload: message }
+}
+export const fetchSuccess = (data) => {
+  return { type: FETCH_SUCCESS, payload: data }
 }
