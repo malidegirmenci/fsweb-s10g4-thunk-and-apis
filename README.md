@@ -37,30 +37,30 @@ Bu projede kullanmak için öncelikle bir API seçmelisiniz. [Bu adresten](https
 
 * [X] Projeye `axios` paketini ekleyin.
 
-* [ ] `actions.js` içerisindeki `fetchAnother` isimli action creator async olmalı ve seçtiğiniz API'dan veri almalı. Derste öğrendiklerinizi kullanarak bu actionu oluşturun ve içerisindeki farklı durumlarda farklı actionlar dispatch edin.
+* [X] `actions.js` içerisindeki `fetchAnother` isimli action creator async olmalı ve seçtiğiniz API'dan veri almalı. Derste öğrendiklerinizi kullanarak bu actionu oluşturun ve içerisindeki farklı durumlarda farklı actionlar dispatch edin.
 
-* [ ] Uygulamadaki diğer actionlar neler? Tespit edin ve gerekli reducer ve actionları oluşturun.
+* [X] Uygulamadaki diğer actionlar neler? Tespit edin ve gerekli reducer ve actionları oluşturun.
 
-* [ ] `Item.js` ve `FavItem.js` dosyasını, seçtiğiniz API'den gelen veri yapısına uygun olarak düzenleyin ve stilleyin. Tailwind kullanmak zorunda değilsiniz.
+* [X] `Item.js` ve `FavItem.js` dosyasını, seçtiğiniz API'den gelen veri yapısına uygun olarak düzenleyin ve stilleyin. Tailwind kullanmak zorunda değilsiniz.
 
-* [ ] `Store` içerisindeki verileri kullanmak istediğiniz yerlerde kullanmak için gerekli kısımları ekleyin.
+* [X] `Store` içerisindeki verileri kullanmak istediğiniz yerlerde kullanmak için gerekli kısımları ekleyin.
 
-* [ ] Sayfadaki `Favorilere Ekle` kısmında kullanmak için gerekli actionu ve reducer bölümünü ekleyin.
+* [X] Sayfadaki `Favorilere Ekle` kısmında kullanmak için gerekli actionu ve reducer bölümünü ekleyin.
 
 ### Görev 3: Favorilenenleri LocalStorage içerisine eklemek/buradan kullanmak
 
-- [ ] İlgili reducer parçalarının içerisinde, size sağlanmış olan `readFavsFromLocalStorage` ve `writeFavsToLocalStorage` fonksiyonlarını kullanın ve uygulamada yaptığımız favorilere ekleme işlemlerinin sonuçlarını saklamamızı sağlayın.
+- [X] İlgili reducer parçalarının içerisinde, size sağlanmış olan `readFavsFromLocalStorage` ve `writeFavsToLocalStorage` fonksiyonlarını kullanın ve uygulamada yaptığımız favorilere ekleme işlemlerinin sonuçlarını saklamamızı sağlayın.
 
 ### Görev 4: react-toastify ile favorilere ekleme işlemi sonrası bildirim vermek ve bildirim sonrasında API'dan yeni bir oge almak
 
-- [ ] Projenize `react-toastify` paketini ekleyin.
+- [X] Projenize `react-toastify` paketini ekleyin.
 
-- [ ] Gerekli ayarlamaları yapın ve bir öge favorilere eklendikten sonra bir başarı toast mesajı görüntüleyin.
+- [X] Gerekli ayarlamaları yapın ve bir öge favorilere eklendikten sonra bir başarı toast mesajı görüntüleyin.
 
-- [ ] Bildirim kaybolmaya yakınken, API'dan tekrar bir öge isteyin.
+- [X] Bildirim kaybolmaya yakınken, API'dan tekrar bir öge isteyin.
 
 ### Esnek Görevler
 
-- [ ] Proje stillerini kendi istediğiniz şekilde değiştirmeye çalışın.
+- [X] Proje stillerini kendi istediğiniz şekilde değiştirmeye çalışın.
 
-- [ ] LocalStorage içerisindeki verileri sıfırlama opsiyonu ekleyin.
+- [X] LocalStorage içerisindeki verileri sıfırlama opsiyonu ekleyin.
